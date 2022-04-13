@@ -1,6 +1,6 @@
 import React from "react";
 
-import HeroText from "./Herotext";
+import HeroText from "./HeroText";
 
 import "../index.css";
 

@@ -1,22 +1,29 @@
 {
-  "name": "my-app",
+  "name": "endless",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
     "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.0.1",
+    "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
     "animate.css": "^4.1.1",
+    "axios": "^0.26.1",
+    "babel-jest": "^27.5.1",
+    "jest": "^27.5.1",
     "react": "^18.0.0",
     "react-animate-on-scroll": "^2.1.5",
     "react-dom": "^18.0.0",
-    "react-scripts": "^5.0.1",
+    "react-scripts": "5.0.0",
+    "react-test-renderer": "^18.0.0",
+    "uglify-js": "^3.15.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -36,5 +43,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less|scss)$": "identity-obj-proxy"
+    }
+  },
+  "devDependencies": {
+    "enzyme-to-json": "^3.6.2"
   }
 }
