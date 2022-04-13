@@ -1,13 +1,59 @@
-body {
+* {
+  box-sizing: border-box;
+  font-family: Lato, sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.nav {
+  background-color: white;
+  padding: 15px;
+  height: 1rem;
+  width: 100vw;
+  border: 1px solid red;
+}
+
+.heroText,
+h4,
+span {
+  color: white;
+  font-weight: 320;
+}
+h4 {
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+span {
+  display: block;
+}
+p {
+  font-weight: 500;
+  margin-top: 1.75rem;
+}
+.paragraph {
+  line-height: 1.7;
+  width: 90%;
+  text-align: right;
+}
+
+.hero {
+  background: url(images/UdKc2x.jpg) fixed;
+  background-size: cover;
+  height: 60rem;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: visible;
+  position: relative;
+  width: 100vw;
+}
+
+.heroText {
+  font-family: Lato, sans-serif;
+  position: absolute;
+  left: 80rem;
+  top: 22rem;
+  background: rgba(99, 99, 99, 0.5);
+  padding: 2%;
+  border-radius: 20px 0 0 20px;
 }
