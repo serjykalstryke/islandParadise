@@ -29,7 +29,7 @@ const Excursions = () => {
                   delectus itaque numquam architecto enim et doloremque voluptas
                   laborum sit veritatis, voluptatum veniam possimus? Tempore,
                   eligendi. Quae doloremque ab quas neque obcaecati earum quasi
-                  nulla in labore reprehenderit?
+                  nulla in labore reprehenderit? poo poo
                 </p>
               </Tab.Pane>
               <Tab.Pane eventKey="#link2">
