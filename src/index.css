@@ -46,7 +46,7 @@ p {
 
 /* Background Image Styling */
 .hero {
-  background: url(./images/Roatan.jpg);
+  background: url(./images/Roatan.jpg) fixed;
   background-size: cover;
   height: 60rem;
   margin-left: auto;
@@ -54,13 +54,18 @@ p {
   overflow: visible;
   position: relative;
   width: 100vw;
-  position: fixed;
+}
+
+.test {
+  display: block;
+  position: absolute;
+  z-index: 1;
 }
 
 .heroText {
   color: black;
   font-family: Lato, sans-serif;
-  position: fixed;
+  position: absolute;
   top: 22rem;
   bottom: 10rem;
   left: 80rem;
@@ -71,7 +76,7 @@ p {
 }
 
 .box-shadow {
-  position: fixed;
+  position: absolute;
   top: 30rem;
   bottom: 10rem;
   left: 80rem;
@@ -79,7 +84,20 @@ p {
   padding: 2rem;
   width: 100%;
   box-shadow: 20px 15px rgba(0, 255, 255);
-  animation: shadowFromRight 3s;
+  animation: shadowFromRight 2.5s;
+  border: 1px solid red;
+}
+
+.box-shadow2 {
+  position: absolute;
+  top: 46.8rem;
+  bottom: 10rem;
+  left: 81.5rem;
+  border-radius: 20px 0px 0px 20px;
+  padding: 2rem;
+  width: 100%;
+  box-shadow: 20px 15px rgb(255, 240, 0);
+  animation: shadowFromRight2 3.5s;
   border: 1px solid red;
 }
 
@@ -115,6 +133,24 @@ p {
     transform: translate(0);
   }
 }
+@keyframes shadowFromRight2 {
+  0% {
+    opacity: 1;
+    transform: translate(400px);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  80% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
 
 /* Button Styles */
 .button {
@@ -125,7 +161,7 @@ p {
   display: inline-block;
   font-size: 14px;
   font-weight: 500;
-  margin-top: 15px;
+  margin-top: 40px;
   padding: 6px 27px;
   text-decoration: none;
   text-transform: uppercase;
@@ -140,6 +176,24 @@ p {
 .button:active,
 .button:focus {
   background-color: #e95420;
+}
+
+.excursionsContainer {
+  width: 100vw;
+}
+
+.excursionOneImage {
+  width: 40rem;
+  float: left;
+  margin-right: 10px;
+}
+
+.excursionButtons {
+  background: rgba(0, 255, 255);
+}
+
+.excursionTitle {
+  font-size: 2rem;
 }
 
 /* Media Queries */
