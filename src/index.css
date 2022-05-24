@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Calligraffitti:wght@100;300;400;700&display=swap");
+
 
 /*Page level styles */
 * {
@@ -7,6 +9,8 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  max-width: 100%;
+    overflow-x: hidden;
 }
 
 /* Navbar styles */
@@ -44,11 +48,34 @@ p {
   width: 100%;
 }
 
+.heroParagraph {
+  margin-top: 3rem
+}
+
+.splashy {
+  font-family: Calligraffitti;
+  overflow: visible;
+  font-size: 5rem;
+  display: block;
+  color: rgb(255,0,193)
+}
+
+.heroLine {
+  width: 100%;
+  height: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(0, 255, 200);
+  border: 0 none;
+  border-radius: 30%;
+  margin-top: 3%
+}
+
 /* Background Image Styling */
 .hero {
   background: url(./images/Roatan.jpg) fixed;
   background-size: cover;
-  height: 60rem;
+  height: 70rem;
   margin-left: auto;
   margin-right: auto;
   overflow: visible;
@@ -67,7 +94,7 @@ p {
   font-family: Lato, sans-serif;
   position: absolute;
   top: 22rem;
-  bottom: 10rem;
+  bottom: 20rem;
   left: 80rem;
   border-radius: 20px 0px 0px 20px;
   padding: 2rem;
@@ -78,27 +105,25 @@ p {
 .box-shadow {
   position: absolute;
   top: 30rem;
-  bottom: 10rem;
+  bottom: 20rem;
   left: 80rem;
   border-radius: 20px 0px 0px 20px;
   padding: 2rem;
   width: 100%;
   box-shadow: 20px 15px rgba(0, 255, 255);
   animation: shadowFromRight 2.5s;
-  border: 1px solid red;
 }
 
 .box-shadow2 {
   position: absolute;
   top: 46.8rem;
-  bottom: 10rem;
+  bottom: 20rem;
   left: 81.5rem;
   border-radius: 20px 0px 0px 20px;
   padding: 2rem;
   width: 100%;
   box-shadow: 20px 15px rgb(255, 240, 0);
   animation: shadowFromRight2 3.5s;
-  border: 1px solid red;
 }
 
 @keyframes moveFromRight {
@@ -178,12 +203,12 @@ p {
   background-color: #e95420;
 }
 
-.excursionsContainer {
-  width: 100vw;
+.tabs {
+  width: 100%;
 }
 
 .excursionOneImage {
-  width: 40rem;
+  width: 48rem;
   float: left;
   margin-right: 10px;
 }
@@ -197,40 +222,7 @@ p {
 }
 
 /* Media Queries */
-
-@media only screen and (max-width: 1200px) {
-  .paragraph {
-    width: 75%;
-  }
-  .logo {
-    margin-left: 5rem !important;
-  }
-  .heroContainer {
-    height: 50rem;
-  }
-  .heroText {
-    left: 6rem;
-    top: 15rem;
-  }
-  .hero {
-    height: 50rem;
-  }
-  h4 {
-    font-size: 13px;
-  }
-  span {
-    font-size: 25px;
-  }
-  p {
-    font-size: 15px;
-    margin-top: 10px;
-  }
-}
-@media only screen and (max-width: 1080px) {
-  .heroText {
-    left: 6rem;
-    top: 12rem;
-  }
+@media screen and (max-width: 1919px) {
   h4 {
     font-size: 15px;
   }
@@ -242,81 +234,254 @@ p {
     margin-top: 10px;
   }
   .hero {
-    height: 40rem;
+    height: 100vh;
     background-attachment: scroll;
   }
-}
-@media only screen and (max-width: 700px) {
+  .heroText {
+    position: absolute;
+    height: 35rem;
+    left: 70rem;
+    top: 17rem;
+    overflow: hidden;
+  }
+
+  .box-shadow {
+    position: absolute;
+    left: 70.2rem;
+    top: 18.2rem;
+    height: 50vh;
+    border-radius: 20px 0px 0px 20px;
+    padding: 2rem;
+    width: 100%;
+    box-shadow: 20px 15px rgba(0, 255, 255);
+    animation: shadowFromRight 2.5s;
+  }
+  
+  .box-shadow2 {
+    position: absolute;
+    left: 71.8rem;
+    top: 19rem;
+    height: 50vh;
+    border-radius: 20px 0px 0px 20px;
+    padding: 2rem;
+    width: 100%;
+    box-shadow: 20px 15px rgb(255, 240, 0);
+    animation: shadowFromRight2 3.5s;
+  }
+  .heroContainer {
+    height: 50rem;
+  }
   .paragraph {
-    width: 60%;
+    width: 75%;
   }
-  .heroText {
-    left: 4rem;
-    top: 4rem;
+
+  .splashy {
+    margin-top: 10px;
+    font-size: 7em;
   }
-  .hero {
-    height: 30rem;
+
+  .heroLine {
+    margin-top: 2px;
   }
-  .logo {
-    margin-left: 2rem !important;
+
+  .button { 
+    margin-top: 10px;
+    margin-left: 10px;
   }
+
+}
+
+
+
+@media only screen and (max-width: 1500px) {
   h4 {
-    font-size: 13px;
+    font-size: 15px;
   }
   span {
-    font-size: 28px;
+    font-size: 30px;
   }
   p {
-    font-size: 13px;
+    font-size: 15px;
     margin-top: 10px;
-  }
-}
-@media only screen and (max-width: 570px) {
-  .heroText {
-    left: 1rem;
-    top: 6rem;
   }
   .hero {
-    height: 45vh;
+    height: 100vh;
+    background-attachment: scroll;
   }
-  h4 {
-    font-size: 10px;
+  .heroText {
+    position: absolute;
+    height: 27rem;
+    left: 6rem;
+    top: 7rem;
+    overflow: hidden;
   }
-  span {
-    font-size: 20px;
+
+  .box-shadow {
+    position: absolute;
+    left: 6rem;
+    top: 0.1rem;
+    height: 50vh;
+    border-radius: 20px 0px 0px 20px;
+    padding: 2rem;
+    width: 100%;
+    box-shadow: 20px 15px rgba(0, 255, 255);
+    animation: shadowFromRight 2.5s;
   }
-  p {
-    font-size: 12px;
+  
+  .box-shadow2 {
+    position: absolute;
+    left: 7.5rem;
+    top: .9rem;
+    height: 50vh;
+    border-radius: 20px 0px 0px 20px;
+    padding: 2rem;
+    width: 100%;
+    box-shadow: 20px 15px rgb(255, 240, 0);
+    animation: shadowFromRight2 3.5s;
+  }
+  .heroContainer {
+    height: 50rem;
+  }
+  .paragraph {
+    width: 75%;
+  }
+
+  .splashy {
     margin-top: 10px;
   }
-  .button {
-    font-size: 10px;
-    font-weight: 500;
-    margin-top: 15px;
-    padding: 3px 20px;
+
+  .heroLine {
+    margin-top: 2px;
+  }
+
+  .button { 
+    margin-top: 10px;
+    margin-left: 10px;
   }
 }
-@media only screen and (max-width: 500px) {
+
+@media only screen and (max-width: 700px) {
   .heroText {
-    top: 2rem;
-    left: 5rem;
+    position: absolute;
+    height: 12rem;
+    top: 1rem;
+    height: 13rem;
+    animation: none;
+    overflow: hidden;
+
   }
   .hero {
     height: 30vh;
     width: 100%;
+    display:block;
   }
   h4 {
     font-size: 7px;
   }
   span {
-    font-size: 18px;
+    font-size: 12px;
   }
   p {
-    font-size: 9px;
+    font-size: 12px;
     margin-top: 10px;
+    width: 100%;
   }
   .paragraph {
     line-height: 1.7;
     width: 60%;
+        font-size: 40em;
+
+  }
+  .heroLine {
+    margin-top: 0px;
+    width: 100%;
+  }
+  .splashy {
+    font-size: 17px;
+    margin-top: -10px;
+  }
+
+  .heroParagraph {
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .excursionTitle {
+    font-size: 20px;
+  }
+
+  .button {
+    display: none;
+  }
+
+  .box-shadow {
+    display: none;
+  }
+
+  .box-shadow2 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 699px) {
+  .heroText {
+    position: absolute;
+    height: 12rem;
+    top: 0.5rem;
+    height: 10rem;
+    animation: none;
+    overflow: hidden;
+
+  }
+  .hero {
+    height: 30vh;
+    width: 100%;
+    display:block;
+  }
+  h4 {
+    font-size: 7px;
+  }
+  span {
+    font-size: 12px;
+  }
+  p {
+    font-size: 10px;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .paragraph {
+    line-height: 1.7;
+    width: 60%;
+        font-size: 40em;
+
+  }
+  .heroLine {
+    margin-top: 0px;
+    width: 100%;
+  }
+  .splashy {
+    font-size: 17px;
+    margin-top: -10px;
+  }
+
+  .heroParagraph {
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .excursionTitle {
+    font-size: 20px;
+  }
+
+  .button {
+    display: none;
+  }
+
+  .box-shadow {
+    display: none;
+  }
+
+  .box-shadow2 {
+    display: none;
   }
 }
