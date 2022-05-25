@@ -34,7 +34,7 @@ const Excursions = () => {
                   className="excursionOneImage"
                   src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d2d9b0d3-236d-488f-8b8f-5b05eedb717c/ddb8ugy-371e8371-d327-47bb-9ae5-49f822988301.png/v1/fill/w_1192,h_670,q_70,strp/beach_day_thumbnail_by_d_reamzrblx_ddb8ugy-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvZDJkOWIwZDMtMjM2ZC00ODhmLThiOGYtNWIwNWVlZGI3MTdjXC9kZGI4dWd5LTM3MWU4MzcxLWQzMjctNDdiYi05YWU1LTQ5ZjgyMjk4ODMwMS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.NSeAsZ36bskI4buLsM-WpGqkPUDzKp4UbftmiB_ffiI"
                   thumbnail
-                />{" "}
+                />{" "} 
                 <p className="excursionText">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Nesciunt quia ipsam quaerat iusto tempore ipsum esse ad
