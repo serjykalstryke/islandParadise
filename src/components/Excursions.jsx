@@ -2,10 +2,10 @@ import { Row, Col, ListGroup, Tab, Image } from "react-bootstrap";
 
 const Excursions = () => {
   return (
-    <div className="excursionsContainer" id="excursions">
+    <div className="excursionsContainer px-4 justify-content-evenly" id="excursions">
       <Tab.Container id="list-group-tabs-example tabContainer" defaultActiveKey="#link1">
-        <Row className="tabs">
-          <Col lg={3}>
+        <Row className="tabs row row-cols-lg-5 g-2">
+          <Col lg={3} className="p-4">
             <ListGroup>
               <ListGroup.Item action href="#link1">
                 <span className="excursionTitle">Horse Back Riding, Sloth Hangout and Tour</span>
@@ -27,7 +27,7 @@ const Excursions = () => {
               </ListGroup.Item>
             </ListGroup>
           </Col>
-          <Col lg={9}>
+          <Col lg={9} className="p-10">
             <Tab.Content>
               <Tab.Pane eventKey="#link1">
                 <Image

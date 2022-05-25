@@ -39,11 +39,11 @@ h4 {
 span {
   display: block;
 }
+
 p {
-  font-size: 1.2rem;
-  width: 100%;
-  text-align: justify;
+  font-size: 1.3rem;
 }
+
 .paragraph {
   line-height: 1.7;
   width: 100%;
@@ -205,9 +205,13 @@ p {
   width: 100%;
 }
 
+
+
 .excursionOneImage {
-  width: 50rem;
   float: left;
+  margin-right: 10px;
+  margin-left: 5px;
+  width: 48rem;
 }
 
 .excursionButtons {
@@ -218,9 +222,7 @@ p {
   font-size: 2rem;
 }
 
-.excursionText {
-  text-align: justify;
-}
+
 
 /* Media Queries */
 @media screen and (max-width: 1919px) {
@@ -685,9 +687,11 @@ p {
     font-size: 12px;
   }
   p {
-    font-size: 10px;
+    font-size: 12px;
     margin-top: 10px;
     width: 100%;
+    text-align: justify;
+    
   }
   .paragraph {
     line-height: 1.7;
