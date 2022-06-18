@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Calligraffitti:wght@100;300;400;700&display=swap");
 
-
 /*Page level styles */
 * {
   box-sizing: border-box;
@@ -10,20 +9,7 @@
   padding: 0;
   scroll-behavior: smooth;
   max-width: 100%;
-    overflow-x: hidden;
-}
-
-/* Navbar styles */
-
-.nav {
-  background-color: #222;
-  padding: 7px;
-}
-.logo {
-  filter: invert(87%) sepia(21%) saturate(7478%) hue-rotate(115deg)
-    brightness(102%) contrast(95%);
-  margin-left: 10rem;
-  width: 100px;
+  overflow-x: hidden;
 }
 
 /* Text Styles */
@@ -59,7 +45,7 @@ p {
   overflow: visible;
   font-size: 5rem;
   display: block;
-  color: rgb(255,0,193)
+  color: rgb(255, 0, 193);
 }
 
 .heroLine {
@@ -70,7 +56,7 @@ p {
   background-color: rgba(0, 255, 200);
   border: 0 none;
   border-radius: 30%;
-  margin-top: 3%
+  margin-top: 3%;
 }
 
 /* Background Image Styling */
@@ -84,8 +70,6 @@ p {
   position: relative;
   width: 100vw;
 }
-
-
 
 .heroText {
   color: black;
@@ -205,13 +189,65 @@ p {
   width: 100%;
 }
 
-
-
 .excursionOneImage {
+  width: 40rem;
+  height: 20rem;
+  background-image: url("./images/horses.jpg");
+  display: block;
   float: left;
-  margin-right: 10px;
-  margin-left: 5px;
-  width: 48rem;
+  margin-top: 2%;
+  margin-right: 2%;
+}
+
+.excursionTwoImage {
+  width: 40rem;
+  height: 20rem;
+  background-image: url("./images/sloths.jpg");
+  object-fit: cover;
+  background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  float: left;
+  margin-top: 2%;
+  margin-right: 2%;
+}
+
+.excursionThreeImage {
+  width: 40rem;
+  height: 20rem;
+  background-image: url("./images/zipline.jpg");
+  float: left;
+  margin-top: 2%;
+  margin-right: 2%;
+}
+
+.excursionFourImage {
+  width: 40rem;
+  height: 20rem;
+  background-image: url("./images/beach.jpg");
+  float: left;
+  margin-top: 2%;
+  margin-right: 2%;
+}
+
+.excursionFiveImage {
+  width: 40rem;
+  height: 20rem;
+  background-image: url("./images/atv.jpg");
+  float: left;
+  margin-top: 2%;
+  margin-right: 2%;
+}
+
+.excursionSixImage {
+  width: 40rem;
+  height: 20rem;
+  background-image: url("./images/tikibar.jpg");
+  float: left;
+  margin-top: 2%;
+  margin-right: 2%;
 }
 
 .excursionButtons {
@@ -222,7 +258,9 @@ p {
   font-size: 2rem;
 }
 
-
+.excursionText {
+  margin-top: 2%;
+}
 
 /* Media Queries */
 @media screen and (max-width: 1919px) {
@@ -259,7 +297,7 @@ p {
     box-shadow: 20px 15px rgba(0, 255, 255);
     animation: shadowFromRight 2.5s;
   }
-  
+
   .box-shadow2 {
     position: absolute;
     left: 71.8rem;
@@ -287,7 +325,7 @@ p {
     margin-top: 2px;
   }
 
-  .button { 
+  .button {
     margin-top: 10px;
     margin-left: 10px;
   }
@@ -297,33 +335,31 @@ p {
       top: 2rem;
       height: 20rem;
     }
-  
+
     .heroParagraph {
       margin-top: 0;
       width: 100%;
     }
-  
+
     .excursionTitle {
       font-size: 1.3em;
     }
-   .excursionOneImage {
-     width: 100vw;
-   }
-   p {
-    font-size: 15px;
-    margin-top: 10px;
-    width: 100%;
-  }
-  
-  .heroText {
-    position: absolute;
-    height: 25rem;
-    left: 80rem;
-    top: 25rem;
-    overflow: hidden;
-  }
-  
-  
+    .excursionOneImage {
+      width: 100vw;
+    }
+    p {
+      font-size: 15px;
+      margin-top: 10px;
+      width: 100%;
+    }
+
+    .heroText {
+      /* position: absolute; */
+      height: 25rem;
+      left: 70rem;
+      top: 19.9rem;
+      overflow: hidden;
+    }
   }
 
   @media only screen and (max-height: 500px) {
@@ -339,28 +375,25 @@ p {
     .box-shadow2 {
       display: none;
     }
-  
+
     .heroParagraph {
       margin-top: 0;
       width: 100%;
     }
-  
+
     .excursionTitle {
       font-size: 1em;
     }
-   .excursionOneImage {
-     width: 100vw;
-   }
-   p {
-    font-size: 12px;
-    margin-top: 10px;
-    width: 100%;
+    .excursionOneImage {
+      width: 100vw;
+    }
+    p {
+      font-size: 12px;
+      margin-top: 10px;
+      width: 100%;
+    }
   }
-  }
-
 }
-
-
 
 @media only screen and (max-width: 1500px) {
   h4 {
@@ -372,7 +405,7 @@ p {
   p {
     font-size: 15px;
     margin-top: 10px;
-    width: 100vw
+    width: 100vw;
   }
   .hero {
     width: 100%;
@@ -397,7 +430,7 @@ p {
     box-shadow: 20px 15px rgba(0, 255, 255);
     animation: shadowFromRight 2.5s;
   }
-  
+
   .box-shadow2 {
     position: absolute;
     left: 15.4rem;
@@ -415,8 +448,7 @@ p {
   .paragraph {
     line-height: 1.7;
     width: 70%;
-        font-size: 40em;
-
+    font-size: 40em;
   }
 
   .splashy {
@@ -427,61 +459,58 @@ p {
     margin-top: 2px;
   }
 
-  .button { 
+  .button {
     margin-top: 10px;
     margin-left: 10px;
   }
   @media only screen and (max-height: 900px) {
-  
     .heroParagraph {
       margin-top: 0;
       width: 100%;
     }
-  
+
     .excursionTitle {
       font-size: 1.3em;
     }
-   .excursionOneImage {
-     width: 100vw;
-   }
-   p {
-    font-size: 15px;
-    margin-top: 10px;
-    width: 100%;
-  }
-  
-  .heroText {
-    position: absolute;
-    height: 20rem;
-    left: 18rem;
-    top: 10rem;
-    overflow: hidden;
-  }
-  .box-shadow {
-    position: absolute;
-    left: 18rem;
-    top: 10rem;
-    height: 39.5vh;
-    border-radius: 20px 0px 0px 20px;
-    padding: 2rem;
-    width: 100%;
-    box-shadow: 20px 15px rgba(0, 255, 255);
-    animation: shadowFromRight 2.5s;
-  }
-  
-  .box-shadow2 {
-    position: absolute;
-    left: 19rem;
-    top: 10.9rem;
-    height: 39.5vh;
-    border-radius: 20px 0px 0px 20px;
-    padding: 2rem;
-    width: 100%;
-    box-shadow: 20px 15px rgb(255, 240, 0);
-    animation: shadowFromRight2 3.5s;
-  }
-  
-  
+    .excursionOneImage {
+      width: 100vw;
+    }
+    p {
+      font-size: 15px;
+      margin-top: 10px;
+      width: 100%;
+    }
+
+    .heroText {
+      position: absolute;
+      height: 20rem;
+      left: 18rem;
+      top: 10rem;
+      overflow: hidden;
+    }
+    .box-shadow {
+      position: absolute;
+      left: 18rem;
+      top: 10rem;
+      height: 39.5vh;
+      border-radius: 20px 0px 0px 20px;
+      padding: 2rem;
+      width: 100%;
+      box-shadow: 20px 15px rgba(0, 255, 255);
+      animation: shadowFromRight 2.5s;
+    }
+
+    .box-shadow2 {
+      position: absolute;
+      left: 19rem;
+      top: 10.9rem;
+      height: 39.5vh;
+      border-radius: 20px 0px 0px 20px;
+      padding: 2rem;
+      width: 100%;
+      box-shadow: 20px 15px rgb(255, 240, 0);
+      animation: shadowFromRight2 3.5s;
+    }
   }
 
   @media only screen and (max-height: 500px) {
@@ -497,23 +526,23 @@ p {
     .box-shadow2 {
       display: none;
     }
-  
+
     .heroParagraph {
       margin-top: 0;
       width: 100%;
     }
-  
+
     .excursionTitle {
       font-size: 1em;
     }
-   .excursionOneImage {
-     width: 100vw;
-   }
-   p {
-    font-size: 12px;
-    margin-top: 10px;
-    width: 100%;
-  }
+    .excursionOneImage {
+      width: 100vw;
+    }
+    p {
+      font-size: 12px;
+      margin-top: 10px;
+      width: 100%;
+    }
   }
 }
 
@@ -525,12 +554,11 @@ p {
     height: 13rem;
     animation: none;
     overflow: hidden;
-
   }
   .hero {
     height: 30vh;
     width: 100%;
-    display:block;
+    display: block;
   }
   h4 {
     font-size: 7px;
@@ -547,7 +575,6 @@ p {
     line-height: 1.7;
     width: 60%;
     font-size: 40em;
-
   }
   .heroLine {
     margin-top: 0px;
@@ -585,33 +612,31 @@ p {
       top: 2rem;
       height: 20rem;
     }
-  
+
     .heroParagraph {
       margin-top: 0;
       width: 100%;
     }
-  
+
     .excursionTitle {
       font-size: 1.3em;
     }
-   .excursionOneImage {
-     width: 100vw;
-   }
-   p {
-    font-size: 15px;
-    margin-top: 10px;
-    width: 100%;
-  }
-  
-  .heroText {
-    position: absolute;
-    height: 25rem;
-    left: 80rem;
-    top: 25rem;
-    overflow: hidden;
-  }
-  
-  
+    .excursionOneImage {
+      width: 100vw;
+    }
+    p {
+      font-size: 15px;
+      margin-top: 10px;
+      width: 100%;
+    }
+
+    .heroText {
+      position: absolute;
+      height: 25rem;
+      left: 80rem;
+      top: 25rem;
+      overflow: hidden;
+    }
   }
 
   @media only screen and (max-height: 500px) {
@@ -627,42 +652,40 @@ p {
     .box-shadow2 {
       display: none;
     }
-  
+
     .heroParagraph {
       margin-top: 0;
       width: 100%;
     }
-  
+
     .excursionTitle {
       font-size: 1em;
     }
-   .excursionOneImage {
-     width: 100vw;
-   }
-   p {
-    font-size: 12px;
-    margin-top: 10px;
-    width: 100%;
-  }
+    .excursionOneImage {
+      width: 100vw;
+    }
+    p {
+      font-size: 12px;
+      margin-top: 10px;
+      width: 100%;
+    }
   }
   @media only screen and (max-height: 376px) {
     .excursionTitle {
       font-size: 0.8rem;
     }
-  
+
     .hero {
       width: 100%;
       height: 100vh;
     }
-  
+
     .heroText {
       top: 8rem;
       left: 16rem;
     }
-    
   }
 }
-
 
 @media only screen and (max-width: 699px) {
   .heroText {
@@ -673,12 +696,11 @@ p {
     height: 10rem;
     animation: none;
     overflow: hidden;
-
   }
   .hero {
     height: 30vh;
     width: 100%;
-    display:block;
+    display: block;
   }
   h4 {
     font-size: 7px;
@@ -691,7 +713,6 @@ p {
     margin-top: 10px;
     width: 100%;
     text-align: justify;
-    
   }
   .heroParagraph {
     font-size: 11px;
@@ -700,8 +721,7 @@ p {
   .paragraph {
     line-height: 1.7;
     width: 60%;
-        font-size: 40em;
-
+    font-size: 40em;
   }
   .heroLine {
     margin-top: 0px;
@@ -746,40 +766,37 @@ p {
     .box-shadow2 {
       display: none;
     }
-  
+
     .heroParagraph {
       margin-top: 0;
       width: 100%;
     }
-  
+
     .excursionTitle {
       font-size: 1em;
     }
-   .excursionOneImage {
-     width: 100vw;
-   }
-   p {
-    font-size: 12px;
-    margin-top: 10px;
-    width: 100%;
-  }
+    .excursionOneImage {
+      width: 100vw;
+    }
+    p {
+      font-size: 12px;
+      margin-top: 10px;
+      width: 100%;
+    }
   }
   @media only screen and (max-height: 376px) {
     .excursionTitle {
       font-size: 0.8rem;
     }
-  
+
     .hero {
       width: 100%;
       height: 100vh;
     }
-  
+
     .heroText {
       top: 8rem;
       left: 16rem;
     }
-    
   }
 }
-
-
