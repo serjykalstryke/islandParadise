@@ -1,5 +1,5 @@
 {
-  "name": "endless",
+  "name": "islandparadise",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -16,7 +16,7 @@
     "react": "^18.0.0",
     "react-bootstrap": "^2.3.1",
     "react-dom": "^18.0.0",
-    "react-scripts": "5.0.0",
+    "react-scripts": "^5.0.1",
     "react-test-renderer": "^18.0.0",
     "sass": "^1.51.0",
     "uglify-js": "^3.15.4",
@@ -54,5 +54,20 @@
   },
   "devDependencies": {
     "enzyme-to-json": "^3.6.2"
-  }
+  },
+  "engines": {
+    "node": "16.x"
+  },
+  "description": "Website built with React to advertise private excursions available in Isla Roatan.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serjykalstryke/islandParadise.git"
+  },
+  "author": "David Stinnett",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/serjykalstryke/islandParadise/issues"
+  },
+  "homepage": "https://github.com/serjykalstryke/islandParadise#readme"
 }
